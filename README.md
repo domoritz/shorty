@@ -1,5 +1,9 @@
 # shorty
 
+<div style="text-align:center">
+    <img src="images/meme.jpg" width="640"></img>
+</div>
+
 A minimal Python script to shorten DOIs in bibtex files using http://shortdoi.org/. The shortener is offered by the [International DOI Foundation](https://www.doi.org/).
 
 Use it with (or [follow long instructions below](#how-do-i-use-it))
@@ -13,26 +17,24 @@ curl -s https://raw.githubusercontent.com/domoritz/shorty/master/main.py | pytho
 It converts
 
 ```bib
-@article{Moritz2018,
-    doi = {10.1109/tvcg.2018.2865240},
-    year  = {2018},
-    publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
-    author = {Dominik Moritz and Chenglong Wang and Greg L. Nelson and Halden Lin and Adam M. Smith and Bill Howe and Jeffrey Heer},
-    title = {Formalizing Visualization Design Knowledge as Constraints: Actionable and Extensible Models in Draco},
-    journal = {{IEEE} Transactions on Visualization and Computer Graphics}
+@article{Moritz2017,
+    doi = {10.1145/3025453.3025456},
+	year = {2017},
+	author = {Dominik Moritz and Danyel Fisher and Bolin Ding and Chi Wang},
+	title = {Trust,  but Verify: Optimistic Visualizations of Approximate Queries for Exploring Big Data},
+	journal = {Proceedings of SIGCHI}
 }
 ```
 
 to (notice the shorter DOI!)
 
 ```bib
-@article{Moritz2018,
-	doi = {10/cs68},
-	year  = {2018},
-	publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
-	author = {Dominik Moritz and Chenglong Wang and Greg L. Nelson and Halden Lin and Adam M. Smith and Bill Howe and Jeffrey Heer},
-	title = {Formalizing Visualization Design Knowledge as Constraints: Actionable and Extensible Models in Draco},
-	journal = {{IEEE} Transactions on Visualization and Computer Graphics}
+@article{Moritz2017,
+	doi = {10/b7jt},
+	year = {2017},
+	author = {Dominik Moritz and Danyel Fisher and Bolin Ding and Chi Wang},
+	title = {Trust,  but Verify: Optimistic Visualizations of Approximate Queries for Exploring Big Data},
+	journal = {Proceedings of SIGCHI}
 }
 ```
 
@@ -51,5 +53,5 @@ python main.py demo.bib > short.bib
 Alternatively, you can pipe in the the content
 
 ```
-cat demo.bib python main.py > short.bib
+cat demo.bib | python main.py > short.bib
 ```
