@@ -1,6 +1,6 @@
 # shorty
 
-A minimal Python script to shorten DOIs in bibtex files.
+A minimal Python script to shorten DOIs in bibtex files using http://shortdoi.org/. The shortener is offered by the [International DOI Foundation](https://www.doi.org/). 
 
 ## What does it do?
 
@@ -17,7 +17,7 @@ It converts
 }
 ```
 
-to (notice the shorter doi!)
+to (notice the shorter DOI!)
 
 ```bib
 @article{Moritz2018,
