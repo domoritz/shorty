@@ -7,12 +7,12 @@ import sys
 
 for line in fileinput.input():
     try:
-        if "doi={" in line.replace(' ', '').lower():
-            doi = re.search('{(.+)}', line).group(1)
-            data = json.load(request.urlopen('http://shortdoi.org/%s?format=json' % doi))
-            print('\tdoi = {%s},' % data['ShortDOI'])
+        if "doi={" in re.sub("\s+", "", line).lower():
+            doi = re.search("{(.+)}", line).group(1)
+            data = json.load(request.urlopen("http://shortdoi.org/%s?format=json" % doi))
+            print(line.replace(doi, data["ShortDOI"]), end="")
         else:
-            print(line, end='')
+            print(line, end="")
     except Exception as err:
         print(err, file=sys.stderr)
-        print(line, end='')
+        print(line, end="")
