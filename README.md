@@ -18,11 +18,12 @@ It converts
 
 ```bib
 @article{Moritz2017,
-    doi = {10.1145/3025453.3025456},
+    	doi = {10.1145/3025453.3025456},
 	year = {2017},
+	publisher = {{ACM} Press},
 	author = {Dominik Moritz and Danyel Fisher and Bolin Ding and Chi Wang},
 	title = {Trust,  but Verify: Optimistic Visualizations of Approximate Queries for Exploring Big Data},
-	journal = {Proceedings of SIGCHI}
+	booktitle = {Proceedings of the 2017 {CHI} Conference on Human Factors in Computing Systems  - {CHI} {\textquotesingle}17}
 }
 ```
 
@@ -32,9 +33,10 @@ to (notice the shorter DOI!)
 @article{Moritz2017,
 	doi = {10/b7jt},
 	year = {2017},
+	publisher = {{ACM} Press},
 	author = {Dominik Moritz and Danyel Fisher and Bolin Ding and Chi Wang},
 	title = {Trust,  but Verify: Optimistic Visualizations of Approximate Queries for Exploring Big Data},
-	journal = {Proceedings of SIGCHI}
+	booktitle = {Proceedings of the 2017 {CHI} Conference on Human Factors in Computing Systems  - {CHI} {\textquotesingle}17}
 }
 ```
 
