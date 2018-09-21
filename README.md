@@ -1,10 +1,10 @@
 # shorty
 
+A minimal Python script to shorten DOIs in bibtex files using http://shortdoi.org/. The shortener is offered by the [International DOI Foundation](https://www.doi.org/).
+
 <div style="text-align:center">
     <img src="images/meme.jpg" width="640"></img>
 </div>
-
-A minimal Python script to shorten DOIs in bibtex files using http://shortdoi.org/. The shortener is offered by the [International DOI Foundation](https://www.doi.org/).
 
 Use it with (or [follow long instructions below](#how-do-i-use-it))
 
