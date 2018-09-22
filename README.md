@@ -18,7 +18,7 @@ It converts
 
 ```bib
 @article{Moritz2017,
-    	doi = {10.1145/3025453.3025456},
+	doi = {10.1145/3025453.3025456},
 	year = {2017},
 	publisher = {{ACM} Press},
 	author = {Dominik Moritz and Danyel Fisher and Bolin Ding and Chi Wang},
