@@ -19,7 +19,7 @@ for line in fileinput.input():
 
         if doi:
             data = json.load(request.urlopen("https://shortdoi.org/%s?format=json" % doi))
-            short_doi = data["shortDOI"][3:] if search_url else data["shortDOI"]
+            short_doi = data["ShortDOI"][3:] if search_url else data["ShortDOI"]
             print(line.replace(doi, short_doi), end="")
         else:
             print(line, end="")
